@@ -1,2 +1,2 @@
-# httpie-aws-authv4
-AWS Auth v4 plugin for HTTPie
+# httpie-nifcloud-authv4
+AWS/NIFCLOUD Auth v4 plugin for HTTPie

@@ -1,5 +1,5 @@
 """
-setup.py for httpie-aws-authv4.
+setup.py for httpie-nifcloud-authv4.
 """
 from setuptools import setup
 
@@ -16,21 +16,21 @@ except ImportError:
     long_description = open("README.md").read()
 
 setup(
-    name="httpie-aws-authv4",
+    name="httpie-nifcloud-authv4",
     description="AWS/NIFCLOUD auth v4 plugin for HTTPie.",
     version="0.0.1",
     author="kzmake",
     author_email="kazu.0516.k0n0f@gmail.com",
     license="MIT",
-    url="https://github.com/kzmake/httpie-aws-authv4",
-    download_url="https://github.com/kzmake/httpie-aws-authv4",
-    py_modules=["httpie_aws_authv4"],
+    url="https://github.com/kzmake/httpie-nifcloud-authv4",
+    download_url="https://github.com/kzmake/httpie-nifcloud-authv4",
+    py_modules=["httpie_nifcloud_authv4"],
     zip_safe=False,
     long_description=long_description,
     entry_points={
         "httpie.plugins.auth.v1": [
-            "httpie_aws_authv4 = httpie_aws_authv4:AWSv4AuthPlugin",
-            "httpie_nifcloud_authv4 = httpie_aws_authv4:NIFCLOUDv4AuthPlugin",
+            "httpie_aws_authv4 = httpie_nifcloud_authv4:AWSv4AuthPlugin",
+            "httpie_nifcloud_authv4 = httpie_nifcloud_authv4:NIFCLOUDv4AuthPlugin",
         ]
     },
     install_requires=["httpie>=1.0.3", "aws-requests-auth>=0.4.2"],

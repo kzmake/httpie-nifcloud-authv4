@@ -18,7 +18,7 @@ except ImportError:
 setup(
     name="httpie-nifcloud-authv4",
     description="AWS/NIFCLOUD auth v4 plugin for HTTPie.",
-    version="0.0.1",
+    version="0.0.2",
     author="kzmake",
     author_email="kazu.0516.k0n0f@gmail.com",
     license="MIT",

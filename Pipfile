@@ -8,6 +8,7 @@ allow_prereleases = true
 
 [dev-packages]
 black = "*"
+pypandoc = "*"
 
 [packages]
 httpie = "*"

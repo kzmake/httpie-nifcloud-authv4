@@ -1,17 +1,16 @@
 .PHONY: all fmt install test clean publish
 
 all:
-	python setup.py bdist
+	poetry build
 
 fmt:
-	git ls-files *.py **/*.py | xargs black
+	poetry run sh -c 'git ls-files *.py **/*.py | xargs black'
 
 install:
-	python setup.py install
+	poetry install
 
 clean:
-	rm -rf build/ dist/ httpie_aws_authv4.egg-info/
+	rm -rf dist/ src/httpie_nifcloud_authv4.egg-info/ src/__pycache__/
 
 publish:
-	python setup.py sdist
-	twine upload dist/*
+	poetry publish

@@ -9,7 +9,7 @@ import re
 
 import requests
 from aws_requests_auth.aws_auth import AWSRequestsAuth
-from httpie import ExitStatus
+from httpie.status import ExitStatus
 from httpie.plugins import AuthPlugin
 
 try:
@@ -17,7 +17,7 @@ try:
 except ImportError:
     from urlparse import urlparse
 
-__version__ = "0.0.1"
+__version__ = "0.1.0"
 __author__ = "kzmake"
 __licence__ = "MIT"
 
